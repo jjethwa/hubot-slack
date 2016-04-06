@@ -21,6 +21,7 @@ docker pull jordan/hubot-slack
 1. Supply HUBOT_SLACK_TOKEN or you won't get too far :)
 1. hubot might take a few minutes to connect to slack as it pulls the necessary node.js modules at startup
 1. hubot must be invited to channels
+1. Official hubot script repo: [https://github.com/hubot-scripts](https://github.com/hubot-scripts)
 
 # Usage
 
@@ -31,9 +32,9 @@ You must first add the Hubot Slack app to your team to obtain a token.  Search f
 sudo docker run -d --name "hubot" -e HUBOT_SLACK_TOKEN=MY_HUBOT_SLACK_TOKEN -v /path/to/hubot/volume:/home/hubot/scripts jordan/hubot-slack:latest
 ```
 
-## Start hubot-slack with one the help and pugme scripts
-Official hubot script repo: [https://github.com/hubot-scripts](https://github.com/hubot-scripts)
-```sudo docker run -d --name "hubot" -e HUBOT_SLACK_TOKEN=MY_HUBOT_SLACK_TOKEN -e EXTERNAL_SCRIPTS=hubot-help,hubot-pugme jordan/hubot-slack:latest
+## Start hubot-slack with one the help and [pugme](https://github.com/hubot-scripts/hubot-pugme) scripts
+```
+sudo docker run -d --name "hubot" -e HUBOT_SLACK_TOKEN=MY_HUBOT_SLACK_TOKEN -e EXTERNAL_SCRIPTS=hubot-help,hubot-pugme jordan/hubot-slack:latest
 ```
 
 # Environment variables
