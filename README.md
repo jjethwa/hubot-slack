@@ -43,7 +43,7 @@ HUBOT_SLACK_TOKEN - Your hubot slack token
 ENV HUBOT_NAME - hubot (default)
 ENV HUBOT_OWNER - none (default)
 ENV HUBOT_DESCRIPTION - Hubot (default)
-ENV EXTERNAL_SCRIPTS - hubot-help (default)
+ENV EXTERNAL_SCRIPTS - hubot-help (default).  Do not add hubot-slack to this list as it is already installed and enabled in the container.
 ```
 
 # Volumes
