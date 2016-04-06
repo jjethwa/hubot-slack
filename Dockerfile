@@ -23,4 +23,4 @@ VOLUME ["/home/hubot/scripts"]
 
 CMD node -e "console.log(JSON.stringify('$EXTERNAL_SCRIPTS'.split(',')))" > external-scripts.json && \
 	npm install $(node -e "console.log('$EXTERNAL_SCRIPTS'.split(',').join(' '))") && \
-	bin/hubot -n $HUBOT_NAME --adapter slack
+	/usr/local/bin/hubot -n $HUBOT_NAME --adapter slack
