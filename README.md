@@ -32,7 +32,7 @@ You must first add the Hubot Slack app to your team to obtain a token.  Search f
 sudo docker run -d --name "hubot" -e HUBOT_SLACK_TOKEN=MY_HUBOT_SLACK_TOKEN -v /path/to/hubot/volume:/home/hubot/scripts jordan/hubot-slack:latest
 ```
 
-## Start hubot-slack with one the help and [pugme](https://github.com/hubot-scripts/hubot-pugme) scripts
+## Start hubot-slack with the help and [pugme](https://github.com/hubot-scripts/hubot-pugme) scripts
 ```
 sudo docker run -d --name "hubot" -e HUBOT_SLACK_TOKEN=MY_HUBOT_SLACK_TOKEN -e EXTERNAL_SCRIPTS=hubot-help,hubot-pugme jordan/hubot-slack:latest
 ```
