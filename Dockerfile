@@ -11,7 +11,7 @@ ENV EXTERNAL_SCRIPTS "hubot-help,hubot-pugme"
 
 RUN useradd hubot -m
 
-RUN npm install -g hubot coffee-script yo generator-hubot
+RUN npm install -g hubot coffeescript yo generator-hubot
 
 USER hubot
 
